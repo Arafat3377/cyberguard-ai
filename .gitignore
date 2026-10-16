@@ -1,0 +1,46 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ===== Virtual Environment =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Django =====
+*.log
+cybersecurity_platform/db.sqlite3
+cybersecurity_platform/db.sqlite3-journal
+cybersecurity_platform/staticfiles/
+cybersecurity_platform/media/
+local_settings.py
+
+# ===== Environment Variables (سري!) =====
+.env
+.env.local
+.env.*.local
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Reports / Outputs =====
+cybersecurity_platform/reports/*.pdf
+cybersecurity_platform/reports/*.csv
+
+# ===== Generated Datasets =====
+cybersecurity_platform/datasets/*.csv
+cybersecurity_platform/datasets/*.js
