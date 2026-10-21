@@ -44,3 +44,7 @@ cybersecurity_platform/reports/*.csv
 # ===== Generated Datasets =====
 cybersecurity_platform/datasets/*.csv
 cybersecurity_platform/datasets/*.js
+
+cybersecurity_platform_backup/
+staticfiles/
+db.sqlite3
