@@ -27,6 +27,9 @@ Academic Django prototype for a simplified SOC environment for SMEs. The project
 ## MySQL
 Create a database named `cybersecurity_db`, copy `.env.example` to `.env` and export the variables in your shell (or configure them in your deployment environment). Install MySQL Server and the `mysqlclient` dependency. Then run `python manage.py migrate`.
 
+## Render deployment
+The repository's `render.yaml` configures a Django web service and PostgreSQL database. In Render, create a Blueprint from the repository and deploy it; the service reads `DATABASE_URL`, `ALLOWED_HOSTS`, and `CSRF_TRUSTED_ORIGINS` from the Blueprint environment. Static files are collected into `staticfiles/` and served by WhiteNoise. Keep SQLite for local development only; Render's service filesystem is not persistent.
+
 ## Main pages
 - `/` Security Dashboard
 - `/devices/` Devices
