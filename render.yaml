@@ -11,7 +11,7 @@ services:
     runtime: python
     plan: free
     region: frankfurt
-    rootDir: cybersecurity_platform
+    # ⚠️ rootDir محذوف لأن المشروع الآن في الجذر
     buildCommand: |
       pip install --upgrade pip &&
       pip install -r requirements.txt &&
@@ -38,12 +38,8 @@ services:
           name: cyberguard-db
           property: connectionString
       - key: SECURE_SSL_REDIRECT
-<<<<<<< Updated upstream
         value: "True"
       - key: SESSION_COOKIE_SECURE
         value: "True"
       - key: CSRF_COOKIE_SECURE
         value: "True"
-=======
-        value: "True"
->>>>>>> Stashed changes
