@@ -30,7 +30,7 @@ services:
       - key: WEB_CONCURRENCY
         value: "2"
       - key: ALLOWED_HOSTS
-        value: ".onrender.com"
+        value: ".onrender.com,cyberguard-ai-3.onrender.com"
       - key: CSRF_TRUSTED_ORIGINS
         value: "https://cyberguard-ai.onrender.com"
       - key: DATABASE_URL
